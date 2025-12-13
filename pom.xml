@@ -41,6 +41,14 @@
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-log4j2 -->
+		<!-- This overrides Logback in Spring Boot with Log4j2 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-log4j2</artifactId>
+			<version>4.0.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -49,6 +57,19 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<!-- The following plugin configuration enables Mockito to work with inline mock maker.
+
+			See why this is necessary
+			https://rieckpil.de/how-to-configure-mockito-agent-for-java-21-without-warning/
+
+			Without this you get the warning:
+			
+			Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in
+			future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's
+			documentation:
+			https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3 -->
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -72,6 +93,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
 
 </project>
