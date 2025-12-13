@@ -22,15 +22,15 @@ public class GreetingControllerTest {
     private GreetingService service;
 
     @Test
-    void greetingShouldReturnDefaultMessage() {
-        when(service.greet(any())).thenReturn("Hello, Mock!");
+    void greetingShouldReturnServiceMessage() {
+        when(service.greet(any())).thenReturn("Hello, World!");
         Greeting greeting = restTestClient.get()
                 .uri("/greeting")
                 .exchange()
                 .expectBody(Greeting.class)
                 .returnResult().getResponseBody();
         assertNotNull(greeting);
-        assertEquals("Hello, Mock!", greeting.content());
+        assertEquals("Hello, World!", greeting.content());
     }
 
 }
