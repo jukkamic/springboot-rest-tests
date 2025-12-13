@@ -27,11 +27,12 @@
         <!-- LOG everything at INFO level -->
         <Root level="info">
             <AppenderRef ref="Console" />
-            <AppenderRef ref="RollingFile" />
         </Root>
 
-        <!-- LOG "com.baeldung*" at TRACE level -->
-        <Logger name="com.baeldung" level="trace"></Logger>
+        <Logger name="com.example.restservice" level="debug" additivity="false">
+            <AppenderRef ref="RollingFile" level="debug"/>
+            <AppenderRef ref="Console" level="info"/>
+        </Logger>
     </Loggers>
 
 </Configuration>
