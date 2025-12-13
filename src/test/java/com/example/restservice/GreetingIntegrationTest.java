@@ -30,6 +30,6 @@ public class GreetingIntegrationTest {
         // .jsonPath("$.content").isEqualTo("Hello, World!")
         // .jsonPath("$.id").isNumber();
     assertNotNull(greeting);
-    assertEquals(greeting.content(), "Hello, World!");
+    assertEquals("Hello, World!", greeting.content() );
 	}
 }
