@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory;
 @Service
 @Slf4j
 public class GreetingService {
-    private static final Logger logger = LoggerFactory.getLogger(GreetingService.class);
 
     public String greet(String name) {
         log.info("Greeting user: {}", name);
