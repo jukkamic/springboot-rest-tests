@@ -1,7 +1,7 @@
 # The Ground Truth: Spring Boot REST Control
 ## The Artisan’s Baseline in an AI-Driven World
 
-**In the era of Agentic Orchestration, the greatest risk is False Velocity—moving fast without realizing the underlying architecture is decaying. This project was built 100% manually. It serves as my "Ground Truth," a high-water mark for craftsmanship used to calibrate and audit every AI agent I deploy.**
+**In the era of Agentic Orchestration, the greatest risk is False Velocity—moving fast without realizing the underlying architecture is decaying. This project was built 100% manually. It serves as my "Ground Truth," a reminder to sometimes sit back and read the documents and the APIs.**
 
 ### The Architecture
 This is a triple-layer tested Spring Boot 3.x application (Java 21) designed to demonstrate the "proper" way to handle REST services.
