@@ -1,4 +1,12 @@
 # The Ground Truth: Spring Boot REST Control
+This marketing hype is the only part where I had to use AI. It's pretty nice work by Gemini (in a separate browser chat window). I just couldn't make myself sound so hyperbolic.
+
+Though the project is simple, I really liked actually digging into the documentations. 
+
+It's like making dinner at home versus always going to a restaurant because now you can afford it. 
+
+It's nice to know that you still remember how to cook.
+
 ## The Artisan’s Baseline in an AI-Driven World
 
 **In the era of Agentic Orchestration, the greatest risk is False Velocity—moving fast without realizing the underlying architecture is decaying. This project was built 100% manually. It serves as my "Ground Truth," a reminder to sometimes sit back and read the documents and the APIs.**
